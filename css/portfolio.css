@@ -2,11 +2,9 @@ body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
 }
-.elem {
-    animation-name: rotate;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+#frontend-skills img, #backend-skills img, #other-skills img{
+  height: 75px;
+  margin: 20px;
 }
 @keyframes rotate {
     from {transform: rotate(0deg);}
