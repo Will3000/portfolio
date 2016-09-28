@@ -2,7 +2,7 @@ body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
 }
-#frontend-skills img, #backend-skills img, #other-skills img{
+#skill img{
   height: 75px;
   margin: 20px;
 }
