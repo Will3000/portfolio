@@ -2,6 +2,20 @@ body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
 }
+.elem {
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+@keyframes rotateReverse {
+    from {transform: rotate(360deg);}
+    to {transform: rotate(0deg);}
+}
 .circular {
   width: 300px;
   height: 300px;
@@ -62,6 +76,11 @@ hr.star-light {
 hr.star-light:after {
   background-color: #18BC9C;
   color: white;
+  border-radius: 50%;
+  animation-name: rotate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 hr.star-primary {
   border-color: #2C3E50;
@@ -69,6 +88,11 @@ hr.star-primary {
 hr.star-primary:after {
   background-color: white;
   color: #2C3E50;
+  border-radius: 50%;
+  animation-name: rotateReverse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 .img-centered {
   margin: 0 auto;
