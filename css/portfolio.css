@@ -7,12 +7,16 @@ body {
   margin: 20px;
 }
 @keyframes rotate {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
+    0% {transform: rotate(0deg) scale(1,1);}
+    50% {transform: rotate(180deg) scale(1.5,1.5);}
+    100% {transform: rotate(360deg) scale(1,1);}
 }
 @keyframes rotateReverse {
-    from {transform: rotate(360deg);}
-    to {transform: rotate(0deg);}
+    /*from {transform: rotate(360deg) scale(1,1);}
+    to {transform: rotate(0deg) scale(1.5,1.5);}*/
+    0% {transform: rotate(0deg) scale(1,1);}
+    50% {transform: rotate(180deg) scale(1.5,1.5);}
+    100% {transform: rotate(360deg) scale(1,1);}
 }
 .circular {
   width: 300px;
